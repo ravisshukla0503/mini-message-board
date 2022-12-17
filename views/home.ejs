@@ -1,0 +1,19 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% message.forEach((mess)=>{ %>
+      <li><%= mess.text %></li>
+      <li><%= mess.user %></li>
+      <li><%= mess.added %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
+
