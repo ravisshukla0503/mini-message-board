@@ -29,11 +29,11 @@ router.get("/new", (req, res, next) => {
 
 router.post("/new", (req, res) => {
   console.log(req.body);
- console.log("hello in ")
+  console.log("hello in ");
   message.push({
     text: req.body.author,
     user: req.body.message,
-    added: new Date()
+    added: new Date(),
   });
   console.log(message);
   res.redirect("/");
@@ -41,5 +41,4 @@ router.post("/new", (req, res) => {
 });
 
 module.exports = router;
-
 
